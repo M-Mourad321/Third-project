@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&family=Montserrat:wght@300;400;500;600;800;900&family=Nunito:wght@200;300;400;500;600&family=Open+Sans:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    font-family: 'Cairo', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+margin: 0;padding: 0;
+box-sizing: border-box;
+outline: none;border: none;
+text-decoration: none;
+transition: all .2s linear;
+text-transform: capitalize;
+
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body{
+    background: #eee;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+.container .title{
+    font-size: 3.5rem;
+    color: #444;
+    padding-top: 5rem;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+.container .products-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    gap: 2rem;
+}
+.container .products-container .product{
+    text-align: center;
+    padding: 3rem 2rem;
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    color: black;
+    outline: .1rem solid #ccc;
+    outline-offset: -1.5rem;
+    cursor: pointer;
+}
+.container .products-container .product:hover{
+    outline: .2rem solid #222;
+    outline-offset: 0;
+}
+.container .products-container .product img{
+    width: 100%;
+    height: 300px;
+    padding: 0 auto;
+
+    border-radius: 10px;
+}
+
+.container .products-container .product:hover img{
+    transform: scale(.9);
+}
+.container .products-container .product h3{
+    padding: .5rem 0 ;
+    font-size: 2rem;
+    color: #444;
+}
+.container .products-container .product:hover h3{
+    color: #27ae60;
+}
+.container .products-container .product .price{
+    font-size: 2rem;
+    color: #444;
+}
+.container .products-container .product .scoal{
+    display: block;
+}
+.products_preview{
+    position: fixed;
+    top: 0;left: 0;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    
+}
+.products_preview .preview{
+    display: none;
+    padding: 2rem;
+    text-align: center;
+    background: #fff;
+    position: relative;
+    color: black;
+    margin: 2rem;
+    width: 40rem; 
+}
+.products_preview .preview .IM{
+    height: 250PX;
+    margin-top: 10PX;
+    width: 100%;
+}
+.products_preview .preview.active{
+    display: inline-block;
+}
+.products_preview .preview img{
+    height: 100%;
+
+}
+.products_preview .preview .fa-times{
+    position: absolute;
+    top: 1rem;right: 1.5rem;
+    cursor: pointer;
+    color: #444;
+    font-size: 3rem;
+    padding-top: 25PX ;
+}
+.products_preview .preview .fa-times:hover{
+    transform: rotate(0deg);
+    color: #27ae60;
+}
+.products_preview .preview h3{
+    color: #444;
+    padding: .5rem 0 ;
+    font-size: 2.5rem;
+}
+.products_preview .preview .stars{
+    padding: 1rem 0;
+    font-size: 1.7rem;
+}
+.products_preview .preview .stars i{
+    color: #27ae60;
+}
+.products_preview .preview .stars span{
+    color: #999;
+}
+.products_preview .preview p {
+    line-height: 1.5;
+    padding: 1rem 0;
+    font-size: 1.6rem;
+    color: #777;
+}
+.products_preview .preview .price{
+    padding: 1rem 0;
+    font-size: 2.5rem;
+    color: #27ae60;
+}
+.products_preview .preview .buttons{
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+.products_preview .preview .buttons a{
+    flex: 1 1 16rem;
+    padding: 1rem;
+    font-size: 1.8rem;
+    color: #444;
+    border: 1rem solid #444;
+}
+.products_preview .preview .buttons a.cart{
+    background: #444;
+    color: #fff;
+}
+.products_preview .preview .buttons a.cart:hover{
+    background: #111;
+}
+.products_preview .preview .buttons a.buy:hover{
+    background: #444;
+    color: #fff; 
+}
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+
+}
+@media (max-width:768px){
+    .products_preview .preview img{
+        height: 25rem;
+    }
+
+}
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+
+}
+
+
+
+
+
+

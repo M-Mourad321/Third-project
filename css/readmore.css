@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&family=Montserrat:wght@300;400;500;600;800;900&family=Open+Sans:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif ;
+    text-decoration: none;
+}
+:root{
+    --color-main:rgb(38,88,154);
+    --color-bg2:#2e3267;
+}
+body{
+    
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--color-main);
+}
+
+/*==============================*/
+.content{
+    margin-top: 150px ;
+    margin-bottom: 100px;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    flex-wrap: wrap;
+    
+}
+.container .card {
+    position: relative;
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    background: var(--color-bg2);
+}
+.container .card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 20px solid transparent;
+    border-top: 20px solid #17e78c;
+    border-right: 20px solid #17e78c;
+}
+.container .card::before{
+    border-top: 20px solid #ff3b7e;
+    border-right: 20px #ff3b7e;
+}
+.container .card .images{
+    margin-bottom: 10px;
+}
+.container .card .images img{
+    width: 250px;
+    height: 200px;
+    max-width: 250px;
+    max-height: 200px;
+    border-radius: 5px;
+}
+
+
+
+
+
+.container .card  h3{
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+.container .card  p {
+    font-weight: 300;
+    color: #ccc;
+    height: 90px;
+    overflow: hidden;
+
+
+}
+.card.showContent  p{
+    height: auto;
+}
+.card a{
+    display: inline-block;
+    color: #fff;
+    background: #8f2020ea;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+.card a{
+    box-shadow: 0 5px 5px rgba(0,0, 0, 0.2);
+}
+.card.showContent a.readmore_btn{
+    background-color: #8f2020ea;
+}
+
+
